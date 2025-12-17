@@ -1,0 +1,25 @@
+{
+  "dbPath": "./apps.db",
+  "resetBeforeInsert": true,
+  "github": {
+    "tokenEnvVar": "GITHUB_TOKEN",
+    "concurrency": 6
+  },
+  "feeds": [
+    {
+      "type": "streamlit_official_gallery",
+      "url": "https://streamlit.io/gallery"
+    },
+    {
+      "type": "streamlit_community_explore"
+    },
+    {
+      "type": "github_repos",
+      "name": "extra-repos",
+      "repos": [
+        "https://github.com/streamlit/streamlit",
+        "https://github.com/streamlit/example-app-image-comparison"
+      ]
+    }
+  ]
+}

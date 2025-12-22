@@ -1,0 +1,517 @@
+{
+  "batch_number": 27,
+  "batch_name": "Google ADK Specialized Tool Agents to CrewAI",
+  "completion_date": "2025-12-21",
+  "total_apps": 6,
+  "pattern": "Tool-based workflows (ADK tools → CrewAI custom tools)",
+  "repository": "https://github.com/colygon/adk-samples",
+  "working_directory": "/Users/colinlowenberg/crew/adk-batch27/",
+  "apps": [
+    {
+      "id": 382,
+      "name": "Antom Payment",
+      "description": "Payment processing integration with transaction validation and receipt generation",
+      "original_tech": "Google ADK",
+      "new_tech": "CrewAI",
+      "directory": "antom-payment-agent382",
+      "agents": [
+        {
+          "role": "Transaction Validator",
+          "goal": "Validate payment requests and ensure compliance with security and regulatory standards",
+          "tools": ["TransactionValidatorTool"],
+          "responsibilities": [
+            "Validate transaction amounts and currencies",
+            "Verify customer information",
+            "Detect fraud patterns",
+            "Ensure compliance with regulations"
+          ]
+        },
+        {
+          "role": "Payment Processor",
+          "goal": "Process payments efficiently and securely, generating confirmations and receipts",
+          "tools": ["PaymentGatewayTool", "ReceiptGeneratorTool"],
+          "responsibilities": [
+            "Process payments through gateways",
+            "Generate transaction confirmations",
+            "Create and send receipts",
+            "Handle payment errors"
+          ]
+        }
+      ],
+      "custom_tools": [
+        {
+          "name": "PaymentGatewayTool",
+          "description": "Processes payments through various payment gateways with support for multiple currencies and payment methods",
+          "inputs": ["amount", "currency", "payment_method", "customer_id"],
+          "outputs": ["transaction_id", "status", "timestamp"]
+        },
+        {
+          "name": "TransactionValidatorTool",
+          "description": "Validates payment transactions for compliance, fraud detection, and data integrity",
+          "inputs": ["transaction_data"],
+          "outputs": ["validation_results", "fraud_score", "compliance_status"]
+        },
+        {
+          "name": "ReceiptGeneratorTool",
+          "description": "Generates payment receipts and sends them to customers",
+          "inputs": ["transaction_id", "customer_email"],
+          "outputs": ["receipt_id", "delivery_status"]
+        }
+      ],
+      "key_features": [
+        "Multi-currency payment processing",
+        "Fraud detection and validation",
+        "Automated receipt generation",
+        "Compliance checking",
+        "Multiple payment method support"
+      ],
+      "workflow": "Sequential: Validate transaction → Process payment → Generate receipt",
+      "status": "completed"
+    },
+    {
+      "id": 384,
+      "name": "Brand Search Optimization",
+      "description": "SEO and search optimization with keyword research and content optimization",
+      "original_tech": "Google ADK",
+      "new_tech": "CrewAI",
+      "directory": "brand-search-agent384",
+      "agents": [
+        {
+          "role": "Keyword Researcher",
+          "goal": "Analyze keywords and search trends to identify the best opportunities for brand visibility",
+          "tools": ["KeywordResearchTool", "RankingTrackerTool"],
+          "responsibilities": [
+            "Research relevant keywords",
+            "Analyze search trends",
+            "Identify long-tail opportunities",
+            "Track current rankings"
+          ]
+        },
+        {
+          "role": "Content Optimizer",
+          "goal": "Optimize website content for search engines while maintaining quality and user experience",
+          "tools": ["SEOAnalyzerTool", "RankingTrackerTool"],
+          "responsibilities": [
+            "Analyze on-page SEO",
+            "Optimize content for keywords",
+            "Improve technical SEO",
+            "Monitor ranking changes"
+          ]
+        }
+      ],
+      "custom_tools": [
+        {
+          "name": "SEOAnalyzerTool",
+          "description": "Analyzes website SEO metrics including on-page optimization, technical SEO, and performance",
+          "inputs": ["url", "keywords"],
+          "outputs": ["seo_score", "meta_tags_analysis", "recommendations"]
+        },
+        {
+          "name": "KeywordResearchTool",
+          "description": "Finds relevant keywords with search volume, competition, and trend data",
+          "inputs": ["topic", "location"],
+          "outputs": ["primary_keywords", "long_tail_keywords", "search_volumes"]
+        },
+        {
+          "name": "RankingTrackerTool",
+          "description": "Monitors search engine rankings for specified keywords and domains",
+          "inputs": ["domain", "keywords"],
+          "outputs": ["current_rankings", "ranking_changes", "visibility_score"]
+        }
+      ],
+      "key_features": [
+        "Comprehensive keyword research",
+        "SEO performance analysis",
+        "Ranking monitoring",
+        "Content optimization recommendations",
+        "Technical SEO insights"
+      ],
+      "workflow": "Sequential: Research keywords → Analyze and optimize content",
+      "status": "completed"
+    },
+    {
+      "id": 394,
+      "name": "Image Scoring",
+      "description": "Visual content evaluation with computer vision and quality assessment",
+      "original_tech": "Google ADK",
+      "new_tech": "CrewAI",
+      "directory": "image-scoring-agent394",
+      "agents": [
+        {
+          "role": "Image Analyzer",
+          "goal": "Analyze image quality, content, and composition using computer vision techniques",
+          "tools": ["VisionAnalysisTool", "ContentDetectionTool"],
+          "responsibilities": [
+            "Detect objects and scenes",
+            "Analyze composition",
+            "Assess technical quality",
+            "Identify content appropriateness"
+          ]
+        },
+        {
+          "role": "Score Calculator",
+          "goal": "Calculate comprehensive image scores based on technical, aesthetic, and content quality",
+          "tools": ["QualityScorerTool"],
+          "responsibilities": [
+            "Calculate quality scores",
+            "Evaluate aesthetics",
+            "Grade images",
+            "Provide improvement recommendations"
+          ]
+        }
+      ],
+      "custom_tools": [
+        {
+          "name": "VisionAnalysisTool",
+          "description": "Performs computer vision analysis on images including object detection, scene understanding, and quality assessment",
+          "inputs": ["image_url", "analysis_type"],
+          "outputs": ["objects_detected", "scene_description", "composition_analysis"]
+        },
+        {
+          "name": "QualityScorerTool",
+          "description": "Scores image quality based on technical metrics, composition, and aesthetic appeal",
+          "inputs": ["image_data"],
+          "outputs": ["overall_quality", "technical_score", "aesthetic_score", "grade"]
+        },
+        {
+          "name": "ContentDetectionTool",
+          "description": "Detects specific content in images including objects, faces, text, and inappropriate content",
+          "inputs": ["image_url", "detection_categories"],
+          "outputs": ["detected_objects", "detected_faces", "detected_text", "safety_flags"]
+        }
+      ],
+      "key_features": [
+        "Computer vision analysis",
+        "Multi-dimensional quality scoring",
+        "Object and scene detection",
+        "Composition evaluation",
+        "Safety content checking"
+      ],
+      "workflow": "Sequential: Analyze image → Calculate comprehensive scores",
+      "status": "completed"
+    },
+    {
+      "id": 395,
+      "name": "LLM Auditor",
+      "description": "Model performance assessment with benchmarking and comprehensive reporting",
+      "original_tech": "Google ADK",
+      "new_tech": "CrewAI",
+      "directory": "llm-auditor-agent395",
+      "agents": [
+        {
+          "role": "Performance Tester",
+          "goal": "Test LLM performance across multiple dimensions including accuracy, speed, and quality",
+          "tools": ["ModelEvaluationTool", "BenchmarkTool"],
+          "responsibilities": [
+            "Run evaluation tests",
+            "Execute benchmarks",
+            "Measure performance metrics",
+            "Assess safety and bias"
+          ]
+        },
+        {
+          "role": "Report Generator",
+          "goal": "Generate comprehensive audit reports from performance data and metrics",
+          "tools": ["MetricsAggregatorTool"],
+          "responsibilities": [
+            "Aggregate test results",
+            "Analyze performance trends",
+            "Generate audit reports",
+            "Provide recommendations"
+          ]
+        }
+      ],
+      "custom_tools": [
+        {
+          "name": "ModelEvaluationTool",
+          "description": "Evaluates LLM responses across multiple criteria including accuracy, relevance, coherence, and safety",
+          "inputs": ["model_name", "test_prompt", "criteria"],
+          "outputs": ["quality_scores", "safety_checks", "performance_metrics"]
+        },
+        {
+          "name": "BenchmarkTool",
+          "description": "Runs comprehensive performance benchmarks on LLMs including standard tasks and custom evaluations",
+          "inputs": ["model_name", "benchmark_suite"],
+          "outputs": ["benchmark_scores", "latency_metrics", "throughput_metrics"]
+        },
+        {
+          "name": "MetricsAggregatorTool",
+          "description": "Aggregates performance metrics from multiple evaluations and benchmarks into comprehensive reports",
+          "inputs": ["evaluation_results", "benchmark_results"],
+          "outputs": ["summary_scores", "strengths", "weaknesses", "recommendations"]
+        }
+      ],
+      "key_features": [
+        "Multi-dimensional model evaluation",
+        "Performance benchmarking",
+        "Safety and bias assessment",
+        "Comprehensive audit reports",
+        "Actionable recommendations"
+      ],
+      "workflow": "Sequential: Test performance → Aggregate metrics and generate report",
+      "status": "completed"
+    },
+    {
+      "id": 403,
+      "name": "Safety Plugins",
+      "description": "Safety feature integration with content moderation and risk assessment",
+      "original_tech": "Google ADK",
+      "new_tech": "CrewAI",
+      "directory": "safety-plugins-agent403",
+      "agents": [
+        {
+          "role": "Content Moderator",
+          "goal": "Moderate content for safety, filtering inappropriate material and detecting toxicity",
+          "tools": ["ContentFilterTool", "ToxicityDetectorTool"],
+          "responsibilities": [
+            "Filter inappropriate content",
+            "Detect toxic language",
+            "Identify policy violations",
+            "Assess content safety"
+          ]
+        },
+        {
+          "role": "Risk Assessor",
+          "goal": "Assess safety risks and provide recommendations for content handling and mitigation",
+          "tools": ["RiskScorerTool"],
+          "responsibilities": [
+            "Score safety risks",
+            "Evaluate compliance",
+            "Recommend actions",
+            "Suggest mitigation strategies"
+          ]
+        }
+      ],
+      "custom_tools": [
+        {
+          "name": "ContentFilterTool",
+          "description": "Filters unsafe content including profanity, violence, hate speech, and inappropriate material",
+          "inputs": ["content", "filter_level"],
+          "outputs": ["passed", "flags", "filtered_content", "severity"]
+        },
+        {
+          "name": "ToxicityDetectorTool",
+          "description": "Detects toxic content including harassment, threats, insults, and identity attacks",
+          "inputs": ["text"],
+          "outputs": ["toxicity_score", "category_scores", "flagged_segments"]
+        },
+        {
+          "name": "RiskScorerTool",
+          "description": "Scores content for various safety risks including legal, reputational, and user safety concerns",
+          "inputs": ["content", "context"],
+          "outputs": ["risk_scores", "risk_level", "recommended_action", "mitigation_suggestions"]
+        }
+      ],
+      "key_features": [
+        "Multi-level content filtering",
+        "Toxicity detection",
+        "Comprehensive risk assessment",
+        "Context-aware evaluation",
+        "Actionable safety recommendations"
+      ],
+      "workflow": "Sequential: Moderate content → Assess risks and recommend actions",
+      "status": "completed"
+    },
+    {
+      "id": 406,
+      "name": "Travel Concierge",
+      "description": "Trip planning and management with itinerary creation and booking services",
+      "original_tech": "Google ADK",
+      "new_tech": "CrewAI",
+      "directory": "travel-concierge-agent406",
+      "agents": [
+        {
+          "role": "Itinerary Planner",
+          "goal": "Plan detailed travel itineraries that match traveler preferences and optimize their experience",
+          "tools": ["TravelAPITool", "ItineraryBuilderTool"],
+          "responsibilities": [
+            "Research destinations",
+            "Plan daily schedules",
+            "Recommend activities",
+            "Optimize travel routes"
+          ]
+        },
+        {
+          "role": "Booking Agent",
+          "goal": "Handle all travel bookings efficiently, securing the best options and confirming reservations",
+          "tools": ["TravelAPITool", "BookingTool"],
+          "responsibilities": [
+            "Search travel options",
+            "Compare prices",
+            "Make reservations",
+            "Confirm bookings"
+          ]
+        }
+      ],
+      "custom_tools": [
+        {
+          "name": "TravelAPITool",
+          "description": "Searches for flights, hotels, and activities using travel APIs with real-time pricing and availability",
+          "inputs": ["search_type", "destination", "start_date", "end_date"],
+          "outputs": ["search_results", "prices", "availability"]
+        },
+        {
+          "name": "BookingTool",
+          "description": "Makes reservations for flights, hotels, and activities with confirmation and payment processing",
+          "inputs": ["booking_type", "booking_details"],
+          "outputs": ["booking_id", "confirmation_number", "payment_status"]
+        },
+        {
+          "name": "ItineraryBuilderTool",
+          "description": "Creates detailed travel itineraries with daily schedules, activities, and recommendations",
+          "inputs": ["destination", "start_date", "end_date", "preferences"],
+          "outputs": ["daily_schedules", "activities", "recommendations"]
+        }
+      ],
+      "key_features": [
+        "Comprehensive travel search",
+        "Personalized itinerary planning",
+        "Automated booking management",
+        "Multi-service coordination",
+        "Preference-based recommendations"
+      ],
+      "workflow": "Sequential: Plan itinerary → Make bookings and confirm reservations",
+      "status": "completed"
+    }
+  ],
+  "statistics": {
+    "total_agents": 12,
+    "total_tools": 18,
+    "average_agents_per_app": 2.0,
+    "average_tools_per_app": 3.0,
+    "tool_categories": {
+      "payment": 3,
+      "seo": 3,
+      "vision": 3,
+      "evaluation": 3,
+      "safety": 3,
+      "travel": 3
+    }
+  },
+  "technology_stack": {
+    "framework": "CrewAI >= 0.28.0",
+    "llm": "Claude Sonnet 4.5 (claude-sonnet-4-5-20250929)",
+    "tools": "CrewAI Tools >= 0.2.0",
+    "language": "Python 3.11+",
+    "dependencies": [
+      "crewai",
+      "crewai-tools",
+      "langchain",
+      "langchain-anthropic",
+      "python-dotenv",
+      "pydantic"
+    ]
+  },
+  "migration_approach": {
+    "pattern": "Tool-based workflows",
+    "strategy": "Convert ADK specialized tools to CrewAI custom tools with Pydantic validation",
+    "architecture": "2-agent sequential workflow per app",
+    "key_changes": [
+      "Replaced ADK tool integrations with custom CrewAI tools",
+      "Implemented type-safe tool inputs using Pydantic models",
+      "Created specialized agent roles for each domain",
+      "Established sequential task workflows",
+      "Added comprehensive error handling and validation"
+    ]
+  },
+  "key_improvements": {
+    "modularity": "Custom tools are reusable across agents and apps",
+    "type_safety": "Pydantic models ensure input validation and type checking",
+    "collaboration": "Multi-agent architecture enables specialized expertise",
+    "extensibility": "Easy to add new tools and agents without modifying existing code",
+    "error_handling": "Built-in validation with clear error messages",
+    "consistency": "All apps follow the same architectural pattern"
+  },
+  "file_structure": {
+    "common_files": [
+      "main.py - Entry point and crew orchestration",
+      "agents.py - Agent definitions with roles and tools",
+      "tasks.py - Task definitions with descriptions and expected outputs",
+      "tools.py - Custom tool implementations with Pydantic schemas",
+      "config.py - Configuration and environment variables",
+      "requirements.txt - Python dependencies",
+      ".env.example - Environment variable template",
+      ".gitignore - Git ignore patterns"
+    ]
+  },
+  "implementation_highlights": [
+    {
+      "category": "Payment Processing",
+      "apps": ["Antom Payment (382)"],
+      "innovation": "Multi-gateway payment processing with fraud detection and automated receipt generation"
+    },
+    {
+      "category": "Search Optimization",
+      "apps": ["Brand Search Optimization (384)"],
+      "innovation": "Integrated keyword research and content optimization with ranking tracking"
+    },
+    {
+      "category": "Computer Vision",
+      "apps": ["Image Scoring (394)"],
+      "innovation": "Multi-dimensional image quality assessment with aesthetic and technical scoring"
+    },
+    {
+      "category": "Model Evaluation",
+      "apps": ["LLM Auditor (395)"],
+      "innovation": "Comprehensive LLM auditing with benchmarking and automated report generation"
+    },
+    {
+      "category": "Content Safety",
+      "apps": ["Safety Plugins (403)"],
+      "innovation": "Layered safety approach with filtering, toxicity detection, and risk assessment"
+    },
+    {
+      "category": "Travel Services",
+      "apps": ["Travel Concierge (406)"],
+      "innovation": "End-to-end travel planning with personalized itineraries and automated booking"
+    }
+  ],
+  "testing_recommendations": [
+    "Test each tool independently with various input scenarios",
+    "Validate sequential workflow execution across all apps",
+    "Verify error handling for invalid inputs",
+    "Test integration with external APIs (payment, travel, etc.)",
+    "Ensure proper environment variable configuration",
+    "Validate LLM responses for each agent role"
+  ],
+  "deployment_notes": [
+    "All apps require ANTHROPIC_API_KEY environment variable",
+    "Install dependencies using: pip install -r requirements.txt",
+    "Run each app using: python main.py",
+    "Configure .env file from .env.example template",
+    "Test tools with mock data before production deployment",
+    "Monitor agent performance and adjust prompts as needed"
+  ],
+  "future_enhancements": [
+    "Add parallel processing for independent tool operations",
+    "Implement caching for API responses",
+    "Add comprehensive logging and monitoring",
+    "Create web interfaces for each app",
+    "Implement user authentication and authorization",
+    "Add support for multiple LLM providers",
+    "Create shared tool library for cross-app reuse"
+  ],
+  "notes": [
+    "All apps successfully converted from Google ADK to CrewAI framework",
+    "Custom tools created for each specialized domain with proper validation",
+    "Sequential workflow pattern maintained for clear task dependencies",
+    "Tool-based architecture enables modular, reusable components",
+    "Each app follows consistent file structure and naming conventions",
+    "Comprehensive documentation provided for each component",
+    "Ready for testing and deployment with minimal configuration"
+  ],
+  "lessons_learned": [
+    "Pydantic models significantly improve tool input validation",
+    "Sequential workflows work well for dependent tasks",
+    "Custom tools provide flexibility for domain-specific requirements",
+    "Agent role specialization improves output quality",
+    "Consistent architecture patterns ease maintenance and scalability"
+  ],
+  "success_metrics": {
+    "code_quality": "All apps use type hints and Pydantic validation",
+    "documentation": "Complete README and inline documentation for all components",
+    "consistency": "100% adherence to established architectural patterns",
+    "completeness": "All 6 apps fully implemented with all required files",
+    "reusability": "Tools and agents designed for maximum reusability"
+  }
+}

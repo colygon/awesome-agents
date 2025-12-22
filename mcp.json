@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "crew-ai": {
+      "command": "mcp-crew-ai",
+      "args": ["--agents", "agents.yml", "--tasks", "tasks.yml"],
+      "env": {
+        "OPENAI_API_KEY": ""
+      }
+    }
+  }
+}

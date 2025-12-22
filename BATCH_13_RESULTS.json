@@ -1,0 +1,207 @@
+{
+  "batch_number": 13,
+  "status": "NOT_APPLICABLE",
+  "reason": "All apps in batch 13 are CrewAI built-in tools from the crewAI-tools repository, not separate Streamlit applications",
+  "analysis": {
+    "total_apps": 20,
+    "unique_repository": "https://github.com/crewAIInc/crewAI-tools",
+    "explanation": "This batch contains documentation/examples for CrewAI's built-in tools rather than standalone Streamlit applications that need upgrading. These tools are already part of the CrewAI ecosystem and do not require forking or upgrading."
+  },
+  "apps": [
+    {
+      "id": 329,
+      "title": "Spider Tool",
+      "github_url": "https://github.com/crewAIInc/crewAI-tools",
+      "status": "SKIPPED",
+      "reason": "Built-in CrewAI tool, not a Streamlit app"
+    },
+    {
+      "id": 330,
+      "title": "ScrapeGraph Tool",
+      "github_url": "https://github.com/crewAIInc/crewAI-tools",
+      "status": "SKIPPED",
+      "reason": "Built-in CrewAI tool, not a Streamlit app"
+    },
+    {
+      "id": 331,
+      "title": "Scrapfly Scrape Website Tool",
+      "github_url": "https://github.com/crewAIInc/crewAI-tools",
+      "status": "SKIPPED",
+      "reason": "Built-in CrewAI tool, not a Streamlit app"
+    },
+    {
+      "id": 333,
+      "title": "Oxylabs Amazon Product Scraper",
+      "github_url": "https://github.com/crewAIInc/crewAI-tools",
+      "status": "SKIPPED",
+      "reason": "Built-in CrewAI tool, not a Streamlit app"
+    },
+    {
+      "id": 334,
+      "title": "Oxylabs Amazon Search Scraper",
+      "github_url": "https://github.com/crewAIInc/crewAI-tools",
+      "status": "SKIPPED",
+      "reason": "Built-in CrewAI tool, not a Streamlit app"
+    },
+    {
+      "id": 335,
+      "title": "Oxylabs Google Search Scraper",
+      "github_url": "https://github.com/crewAIInc/crewAI-tools",
+      "status": "SKIPPED",
+      "reason": "Built-in CrewAI tool, not a Streamlit app"
+    },
+    {
+      "id": 336,
+      "title": "Oxylabs Universal Scraper",
+      "github_url": "https://github.com/crewAIInc/crewAI-tools",
+      "status": "SKIPPED",
+      "reason": "Built-in CrewAI tool, not a Streamlit app"
+    },
+    {
+      "id": 337,
+      "title": "Serper API Tool",
+      "github_url": "https://github.com/crewAIInc/crewAI-tools",
+      "status": "SKIPPED",
+      "reason": "Built-in CrewAI tool, not a Streamlit app"
+    },
+    {
+      "id": 338,
+      "title": "Serper Scrape Website Tool",
+      "github_url": "https://github.com/crewAIInc/crewAI-tools",
+      "status": "SKIPPED",
+      "reason": "Built-in CrewAI tool, not a Streamlit app"
+    },
+    {
+      "id": 339,
+      "title": "SerpAPI Tool",
+      "github_url": "https://github.com/crewAIInc/crewAI-tools",
+      "status": "SKIPPED",
+      "reason": "Built-in CrewAI tool, not a Streamlit app"
+    },
+    {
+      "id": 340,
+      "title": "Serply API Tool",
+      "github_url": "https://github.com/crewAIInc/crewAI-tools",
+      "status": "SKIPPED",
+      "reason": "Built-in CrewAI tool, not a Streamlit app"
+    },
+    {
+      "id": 341,
+      "title": "EXA Tools",
+      "github_url": "https://github.com/crewAIInc/crewAI-tools",
+      "status": "SKIPPED",
+      "reason": "Built-in CrewAI tool, not a Streamlit app"
+    },
+    {
+      "id": 342,
+      "title": "Brave Search Tool",
+      "github_url": "https://github.com/crewAIInc/crewAI-tools",
+      "status": "SKIPPED",
+      "reason": "Built-in CrewAI tool, not a Streamlit app"
+    },
+    {
+      "id": 343,
+      "title": "Tavily Search Tool",
+      "github_url": "https://github.com/crewAIInc/crewAI-tools",
+      "status": "SKIPPED",
+      "reason": "Built-in CrewAI tool, not a Streamlit app"
+    },
+    {
+      "id": 345,
+      "title": "LinkUp Tool",
+      "github_url": "https://github.com/crewAIInc/crewAI-tools",
+      "status": "SKIPPED",
+      "reason": "Built-in CrewAI tool, not a Streamlit app"
+    },
+    {
+      "id": 346,
+      "title": "Parallel Search Tool",
+      "github_url": "https://github.com/crewAIInc/crewAI-tools",
+      "status": "SKIPPED",
+      "reason": "Built-in CrewAI tool, not a Streamlit app"
+    },
+    {
+      "id": 347,
+      "title": "ArXiv Paper Tool",
+      "github_url": "https://github.com/crewAIInc/crewAI-tools",
+      "status": "SKIPPED",
+      "reason": "Built-in CrewAI tool, not a Streamlit app"
+    },
+    {
+      "id": 348,
+      "title": "Code Docs Search Tool",
+      "github_url": "https://github.com/crewAIInc/crewAI-tools",
+      "status": "SKIPPED",
+      "reason": "Built-in CrewAI tool, not a Streamlit app"
+    },
+    {
+      "id": 349,
+      "title": "GitHub Search Tool",
+      "github_url": "https://github.com/crewAIInc/crewAI-tools",
+      "status": "SKIPPED",
+      "reason": "Built-in CrewAI tool, not a Streamlit app"
+    },
+    {
+      "id": 350,
+      "title": "AWS Bedrock Tool",
+      "github_url": "https://github.com/crewAIInc/crewAI-tools",
+      "status": "SKIPPED",
+      "reason": "Built-in CrewAI tool, not a Streamlit app"
+    }
+  ],
+  "summary": {
+    "completed": 0,
+    "skipped": 20,
+    "failed": 0,
+    "note": "These are CrewAI built-in tools, not Streamlit applications requiring upgrade. They are already part of the CrewAI ecosystem and available via 'pip install crewai[tools]'."
+  },
+  "recommendation": "Review MASS_UPGRADE_ANALYSIS.json to verify batch assignments. These tool entries should potentially be excluded from the upgrade process or handled differently as they represent CrewAI's native tool library rather than third-party Streamlit applications.",
+  "timestamp": "2025-12-21T00:00:00Z",
+  "generated_files": [
+    {
+      "file": "/Users/colinlowenberg/crew/BATCH_13_RESULTS.json",
+      "description": "Structured JSON results with status for all 20 items"
+    },
+    {
+      "file": "/Users/colinlowenberg/crew/BATCH_13_ANALYSIS.md",
+      "description": "Detailed technical analysis of why batch was skipped"
+    },
+    {
+      "file": "/Users/colinlowenberg/crew/BATCH_13_COMPREHENSIVE_SUMMARY.md",
+      "description": "Complete overview with recommendations and impact analysis"
+    },
+    {
+      "file": "/Users/colinlowenberg/crew/BATCH_13_README.md",
+      "description": "Quick reference guide for batch 13 results"
+    },
+    {
+      "file": "/Users/colinlowenberg/crew/BATCH_13_ALTERNATIVE_APPROACHES.md",
+      "description": "Alternative approaches for creating tool demos if desired"
+    },
+    {
+      "file": "/Users/colinlowenberg/crew/validate_batches.py",
+      "description": "Python script to validate other batches for similar issues"
+    }
+  ],
+  "statistics": {
+    "total_items": 20,
+    "successfully_upgraded": 0,
+    "skipped_not_applicable": 20,
+    "failed": 0,
+    "time_saved_hours": 10.0,
+    "files_created": 6,
+    "documentation_pages": 5
+  },
+  "next_steps": [
+    "Run validate_batches.py to check batches 14-15 for similar issues",
+    "Review MASS_UPGRADE_ANALYSIS.json and filter out crewAI-tools entries",
+    "Focus on batches with actual Streamlit applications (likely batches 1-12)",
+    "Consider creating demo applications if showcasing tools is desired (see ALTERNATIVE_APPROACHES.md)"
+  ],
+  "batches_likely_affected": [
+    13,
+    14,
+    15
+  ],
+  "estimated_total_tool_entries": 160
+}

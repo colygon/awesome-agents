@@ -1,0 +1,368 @@
+{
+  "batch_number": 9,
+  "total_apps": 20,
+  "processed": 20,
+  "timestamp": "2025-12-21T19:58:27.378740",
+  "results": [
+    {
+      "id": 187,
+      "title": "ClickML",
+      "github_url": "https://github.com/baselhusam/clickml",
+      "status": "completed",
+      "steps": {
+        "fork": "success",
+        "clone": "success",
+        "agents": "success",
+        "tasks": "success",
+        "main": "success",
+        "requirements": "success",
+        "documentation": "success",
+        "git_commit": "success"
+      },
+      "errors": [],
+      "directory": "/Users/colinlowenberg/crew/clickml-agent187"
+    },
+    {
+      "id": 138,
+      "title": "geemap",
+      "github_url": "https://github.com/giswqs/geemap-apps",
+      "status": "completed",
+      "steps": {
+        "fork": "success",
+        "clone": "success",
+        "agents": "success",
+        "tasks": "success",
+        "main": "success",
+        "requirements": "success",
+        "documentation": "success",
+        "git_commit": "success"
+      },
+      "errors": [],
+      "directory": "/Users/colinlowenberg/crew/geemap-agent138"
+    },
+    {
+      "id": 215,
+      "title": "Respell Call Streamlit App",
+      "github_url": "https://github.com/tonykipkemboi/respell-call-streamlit-demo",
+      "status": "completed",
+      "steps": {
+        "fork": "success",
+        "clone": "success",
+        "agents": "success",
+        "tasks": "success",
+        "main": "success",
+        "requirements": "success",
+        "documentation": "success",
+        "git_commit": "success"
+      },
+      "errors": [],
+      "directory": "/Users/colinlowenberg/crew/respell-agent215"
+    },
+    {
+      "id": 164,
+      "title": "Hoops Hero",
+      "github_url": "https://github.com/andreilevin/hoopshero",
+      "status": "completed",
+      "steps": {
+        "fork": "success",
+        "clone": "success",
+        "agents": "success",
+        "tasks": "success",
+        "main": "success",
+        "requirements": "success",
+        "documentation": "success",
+        "git_commit": "success"
+      },
+      "errors": [],
+      "directory": "/Users/colinlowenberg/crew/hoopshero-agent164"
+    },
+    {
+      "id": 242,
+      "title": "CHZZK VOD Downloader",
+      "github_url": "https://github.com/emailafsalsha-coder/blank-app",
+      "status": "completed",
+      "steps": {
+        "fork": "success",
+        "clone": "success",
+        "agents": "success",
+        "tasks": "success",
+        "main": "success",
+        "requirements": "success",
+        "documentation": "success",
+        "git_commit": "success"
+      },
+      "errors": [],
+      "directory": "/Users/colinlowenberg/crew/chzzk-agent242"
+    },
+    {
+      "id": 278,
+      "title": "Surprise Trip Planner",
+      "github_url": "https://github.com/crewAIInc/crewAI-examples",
+      "status": "completed",
+      "steps": {
+        "fork": "success",
+        "clone": "success",
+        "agents": "success",
+        "tasks": "success",
+        "main": "success",
+        "requirements": "success",
+        "documentation": "success",
+        "git_commit": "success"
+      },
+      "errors": [],
+      "directory": "/Users/colinlowenberg/crew/trip-planner-agent278"
+    },
+    {
+      "id": 214,
+      "title": "Streamly Streamlit Assistant",
+      "github_url": "https://github.com/adielaine/streamly",
+      "status": "completed",
+      "steps": {
+        "fork": "success",
+        "clone": "success",
+        "agents": "success",
+        "tasks": "success",
+        "main": "success",
+        "requirements": "success",
+        "documentation": "success",
+        "git_commit": "success"
+      },
+      "errors": [],
+      "directory": "/Users/colinlowenberg/crew/streamly-agent214"
+    },
+    {
+      "id": 185,
+      "title": "Oapy by Impression",
+      "github_url": "https://github.com/lukedavisseo/oapy",
+      "status": "completed",
+      "steps": {
+        "fork": "success",
+        "clone": "success",
+        "agents": "success",
+        "tasks": "success",
+        "main": "success",
+        "requirements": "success",
+        "documentation": "success",
+        "git_commit": "success"
+      },
+      "errors": [],
+      "directory": "/Users/colinlowenberg/crew/oapy-agent185"
+    },
+    {
+      "id": 251,
+      "title": "RR Locations",
+      "github_url": "https://github.com/izrofid/radredinfo",
+      "status": "completed",
+      "steps": {
+        "fork": "success",
+        "clone": "success",
+        "agents": "success",
+        "tasks": "success",
+        "main": "success",
+        "requirements": "success",
+        "documentation": "success",
+        "git_commit": "success"
+      },
+      "errors": [],
+      "directory": "/Users/colinlowenberg/crew/rrlocations-agent251"
+    },
+    {
+      "id": 241,
+      "title": "NPB Pitch Profile",
+      "github_url": "https://github.com/bouno05/npb_pitch_profile",
+      "status": "completed",
+      "steps": {
+        "fork": "success",
+        "clone": "success",
+        "agents": "success",
+        "tasks": "success",
+        "main": "success",
+        "requirements": "success",
+        "documentation": "success",
+        "git_commit": "success"
+      },
+      "errors": [],
+      "directory": "/Users/colinlowenberg/crew/npb-pitch-agent241"
+    },
+    {
+      "id": 136,
+      "title": "DocGPT",
+      "github_url": "https://github.com/leo-usa/knowledge_gpt",
+      "status": "completed",
+      "steps": {
+        "fork": "success",
+        "clone": "success",
+        "agents": "success",
+        "tasks": "success",
+        "main": "success",
+        "requirements": "success",
+        "documentation": "success",
+        "git_commit": "success"
+      },
+      "errors": [],
+      "directory": "/Users/colinlowenberg/crew/docgpt-agent136"
+    },
+    {
+      "id": 213,
+      "title": "PixMatch",
+      "github_url": "https://github.com/shakamoushie/pixmatch",
+      "status": "completed",
+      "steps": {
+        "fork": "success",
+        "clone": "success",
+        "agents": "success",
+        "tasks": "success",
+        "main": "success",
+        "requirements": "success",
+        "documentation": "success",
+        "git_commit": "success"
+      },
+      "errors": [],
+      "directory": "/Users/colinlowenberg/crew/pixmatch-agent213"
+    },
+    {
+      "id": 163,
+      "title": "ResuLLMe",
+      "github_url": "https://github.com/ivaniscoding/resullme",
+      "status": "completed",
+      "steps": {
+        "fork": "success",
+        "clone": "success",
+        "agents": "success",
+        "tasks": "success",
+        "main": "success",
+        "requirements": "success",
+        "documentation": "success",
+        "git_commit": "success"
+      },
+      "errors": [],
+      "directory": "/Users/colinlowenberg/crew/resullme-agent163"
+    },
+    {
+      "id": 135,
+      "title": "CloneRetriever",
+      "github_url": "https://github.com/eitan177/cloneretriever",
+      "status": "completed",
+      "steps": {
+        "fork": "success",
+        "clone": "failed",
+        "agents": "success",
+        "tasks": "success",
+        "main": "success",
+        "requirements": "success",
+        "documentation": "success",
+        "git_commit": "failed"
+      },
+      "errors": [],
+      "directory": "/Users/colinlowenberg/crew/cloneretriever-agent135"
+    },
+    {
+      "id": 212,
+      "title": "Frosty app",
+      "github_url": "https://github.com/cerebrosports/kobe",
+      "status": "completed",
+      "steps": {
+        "fork": "success",
+        "clone": "success",
+        "agents": "success",
+        "tasks": "success",
+        "main": "success",
+        "requirements": "success",
+        "documentation": "success",
+        "git_commit": "success"
+      },
+      "errors": [],
+      "directory": "/Users/colinlowenberg/crew/frosty-agent212"
+    },
+    {
+      "id": 184,
+      "title": "airline prediction",
+      "github_url": "https://github.com/sfc-gh-dong/flight_delay",
+      "status": "completed",
+      "steps": {
+        "fork": "success",
+        "clone": "failed",
+        "agents": "success",
+        "tasks": "success",
+        "main": "success",
+        "requirements": "success",
+        "documentation": "success",
+        "git_commit": "failed"
+      },
+      "errors": [],
+      "directory": "/Users/colinlowenberg/crew/airline-predict-agent184"
+    },
+    {
+      "id": 240,
+      "title": "Token Counter",
+      "github_url": "https://github.com/jawad-haleem/token-count",
+      "status": "completed",
+      "steps": {
+        "fork": "success",
+        "clone": "success",
+        "agents": "success",
+        "tasks": "success",
+        "main": "success",
+        "requirements": "success",
+        "documentation": "success",
+        "git_commit": "success"
+      },
+      "errors": [],
+      "directory": "/Users/colinlowenberg/crew/token-counter-agent240"
+    },
+    {
+      "id": 134,
+      "title": "The Dungeon",
+      "github_url": "https://github.com/tomjohnh/streamlit-dungeon",
+      "status": "completed",
+      "steps": {
+        "fork": "success",
+        "clone": "success",
+        "agents": "success",
+        "tasks": "success",
+        "main": "success",
+        "requirements": "success",
+        "documentation": "success",
+        "git_commit": "success"
+      },
+      "errors": [],
+      "directory": "/Users/colinlowenberg/crew/dungeon-agent134"
+    },
+    {
+      "id": 183,
+      "title": "Streamlit to Streamlit in Snowflake",
+      "github_url": "https://github.com/iamontheinet/streamlit-to-sis",
+      "status": "completed",
+      "steps": {
+        "fork": "success",
+        "clone": "success",
+        "agents": "success",
+        "tasks": "success",
+        "main": "success",
+        "requirements": "success",
+        "documentation": "success",
+        "git_commit": "success"
+      },
+      "errors": [],
+      "directory": "/Users/colinlowenberg/crew/streamlit-sis-agent183"
+    },
+    {
+      "id": 161,
+      "title": "Diagnosis Assistant",
+      "github_url": "https://github.com/glambard/mdxapp",
+      "status": "completed",
+      "steps": {
+        "fork": "success",
+        "clone": "success",
+        "agents": "success",
+        "tasks": "success",
+        "main": "success",
+        "requirements": "success",
+        "documentation": "success",
+        "git_commit": "success"
+      },
+      "errors": [],
+      "directory": "/Users/colinlowenberg/crew/diagnosis-agent161"
+    }
+  ]
+}

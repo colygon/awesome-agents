@@ -1,0 +1,27 @@
+analyze_code:
+  description: >
+    Analyze the provided Streamlit app code and identify areas for improvement,
+    including potential CrewAI integrations and multi-agent enhancements.
+  expected_output: A detailed analysis report with specific recommendations
+  agent: code_analyzer
+
+upgrade_to_crewai:
+  description: >
+    Upgrade the Streamlit app to use CrewAI by adding multi-agent capabilities,
+    task orchestration, and enhanced functionality based on the code analysis.
+  expected_output: Upgraded code with CrewAI integration and migration notes
+  agent: crewai_specialist
+
+submit_app:
+  description: >
+    Guide the user through submitting their enhanced app to the gallery,
+    ensuring all required information is collected and formatted properly.
+  expected_output: Complete app submission with all metadata
+  agent: app_submitter
+
+generate_summary:
+  description: >
+    Create a comprehensive summary of the code analysis, CrewAI upgrade,
+    and submission process for the user.
+  expected_output: Detailed summary report
+  agent: code_analyzer

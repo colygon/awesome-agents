@@ -1,0 +1,160 @@
+{
+  "batch_number": 14,
+  "status": "NOT_APPLICABLE",
+  "reason": "All apps in batch 14 are CrewAI built-in tools from the crewAI-tools repository, not separate Streamlit applications",
+  "analysis": {
+    "total_apps": 20,
+    "unique_repository": "https://github.com/crewAIInc/crewAI-tools",
+    "explanation": "This batch contains documentation/examples for CrewAI's built-in tools rather than standalone Streamlit applications that need upgrading. These tools are already part of the CrewAI ecosystem and do not require forking or upgrading."
+  },
+  "apps": [
+    {
+      "id": 351,
+      "title": "AWS S3 Tool",
+      "github_url": "https://github.com/crewAIInc/crewAI-tools",
+      "status": "SKIPPED",
+      "reason": "Built-in CrewAI tool, not a Streamlit app"
+    },
+    {
+      "id": 352,
+      "title": "Zapier Adapter",
+      "github_url": "https://github.com/crewAIInc/crewAI-tools",
+      "status": "SKIPPED",
+      "reason": "Built-in CrewAI tool, not a Streamlit app"
+    },
+    {
+      "id": 353,
+      "title": "Zapier Action Tool",
+      "github_url": "https://github.com/crewAIInc/crewAI-tools",
+      "status": "SKIPPED",
+      "reason": "Built-in CrewAI tool, not a Streamlit app"
+    },
+    {
+      "id": 354,
+      "title": "Composio Tool",
+      "github_url": "https://github.com/crewAIInc/crewAI-tools",
+      "status": "SKIPPED",
+      "reason": "Built-in CrewAI tool, not a Streamlit app"
+    },
+    {
+      "id": 355,
+      "title": "Apify Actors Tool",
+      "github_url": "https://github.com/crewAIInc/crewAI-tools",
+      "status": "SKIPPED",
+      "reason": "Built-in CrewAI tool, not a Streamlit app"
+    },
+    {
+      "id": 356,
+      "title": "MultiOn Tool",
+      "github_url": "https://github.com/crewAIInc/crewAI-tools",
+      "status": "SKIPPED",
+      "reason": "Built-in CrewAI tool, not a Streamlit app"
+    },
+    {
+      "id": 362,
+      "title": "CrewAI Platform Tools",
+      "github_url": "https://github.com/crewAIInc/crewAI-tools",
+      "status": "SKIPPED",
+      "reason": "Built-in CrewAI tool, not a Streamlit app"
+    },
+    {
+      "id": 364,
+      "title": "Invoke CrewAI Automation Tool",
+      "github_url": "https://github.com/crewAIInc/crewAI-tools",
+      "status": "SKIPPED",
+      "reason": "Built-in CrewAI tool, not a Streamlit app"
+    },
+    {
+      "id": 365,
+      "title": "Patronus Eval Tool",
+      "github_url": "https://github.com/crewAIInc/crewAI-tools",
+      "status": "SKIPPED",
+      "reason": "Built-in CrewAI tool, not a Streamlit app"
+    },
+    {
+      "id": 366,
+      "title": "YouTube Channel Search Tool",
+      "github_url": "https://github.com/crewAIInc/crewAI-tools",
+      "status": "SKIPPED",
+      "reason": "Built-in CrewAI tool, not a Streamlit app"
+    },
+    {
+      "id": 367,
+      "title": "YouTube Video Search Tool",
+      "github_url": "https://github.com/crewAI-tools",
+      "status": "SKIPPED",
+      "reason": "Built-in CrewAI tool, not a Streamlit app"
+    },
+    {
+      "id": 291,
+      "title": "RAG Adapter",
+      "github_url": "https://github.com/crewAIInc/crewAI-tools",
+      "status": "SKIPPED",
+      "reason": "Built-in CrewAI tool, not a Streamlit app"
+    },
+    {
+      "id": 292,
+      "title": "CrewAI RAG Adapter",
+      "github_url": "https://github.com/crewAIInc/crewAI-tools",
+      "status": "SKIPPED",
+      "reason": "Built-in CrewAI tool, not a Streamlit app"
+    },
+    {
+      "id": 293,
+      "title": "PostgreSQL Search Tool",
+      "github_url": "https://github.com/crewAIInc/crewAI-tools",
+      "status": "SKIPPED",
+      "reason": "Built-in CrewAI tool, not a Streamlit app"
+    },
+    {
+      "id": 294,
+      "title": "MySQL Search Tool",
+      "github_url": "https://github.com/crewAIInc/crewAI-tools",
+      "status": "SKIPPED",
+      "reason": "Built-in CrewAI tool, not a Streamlit app"
+    },
+    {
+      "id": 295,
+      "title": "MongoDB Vector Search Tool",
+      "github_url": "https://github.com/crewAIInc/crewAI-tools",
+      "status": "SKIPPED",
+      "reason": "Built-in CrewAI tool, not a Streamlit app"
+    },
+    {
+      "id": 296,
+      "title": "Qdrant Vector Search Tool",
+      "github_url": "https://github.com/crewAIInc/crewAI-tools",
+      "status": "SKIPPED",
+      "reason": "Built-in CrewAI tool, not a Streamlit app"
+    },
+    {
+      "id": 297,
+      "title": "Weaviate Tool",
+      "github_url": "https://github.com/crewAIInc/crewAI-tools",
+      "status": "SKIPPED",
+      "reason": "Built-in CrewAI tool, not a Streamlit app"
+    },
+    {
+      "id": 298,
+      "title": "LanceDB Tool",
+      "github_url": "https://github.com/crewAIInc/crewAI-tools",
+      "status": "SKIPPED",
+      "reason": "Built-in CrewAI tool, not a Streamlit app"
+    },
+    {
+      "id": 299,
+      "title": "Couchbase Tool",
+      "github_url": "https://github.com/crewAIInc/crewAI-tools",
+      "status": "SKIPPED",
+      "reason": "Built-in CrewAI tool, not a Streamlit app"
+    }
+  ],
+  "summary": {
+    "completed": 0,
+    "skipped": 20,
+    "failed": 0,
+    "note": "These are CrewAI built-in tools, not Streamlit applications requiring upgrade. They are already part of the CrewAI ecosystem and available via 'pip install crewai[tools]'."
+  },
+  "recommendation": "Review MASS_UPGRADE_ANALYSIS.json to verify batch assignments. These tool entries should potentially be excluded from the upgrade process or handled differently as they represent CrewAI's native tool library rather than third-party Streamlit applications.",
+  "timestamp": "2025-12-21T00:00:00Z"
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "id": 73,
+    "title": "AI Assistant",
+    "github_url": "https://github.com/streamlit/demo-ai-assistant",
+    "priority": "high",
+    "reason": "Official Streamlit demo - perfect for showcasing CrewAI",
+    "upgrade_strategy": "Add multi-agent collaboration for more complex queries"
+  },
+  {
+    "id": 78,
+    "title": "LLM examples",
+    "github_url": "https://github.com/streamlit/llm-examples",
+    "priority": "high",
+    "reason": "Collection of LLM examples - can add CrewAI examples",
+    "upgrade_strategy": "Add CrewAI agent examples to the collection"
+  },
+  {
+    "id": 123,
+    "title": "LangChain: Chat with pandas DataFrame",
+    "github_url": "https://github.com/amjadraza/streamlit-agent",
+    "priority": "high",
+    "reason": "Uses LangChain agents - replace with CrewAI",
+    "upgrade_strategy": "Replace LangChain agent with CrewAI data analysis crew"
+  },
+  {
+    "id": 97,
+    "title": "Chat with the Streamlit docs, powered by LlamaIndex",
+    "github_url": "https://github.com/carolinefrasca/llamaindex-chat-with-streamlit-docs",
+    "priority": "medium",
+    "reason": "Uses LlamaIndex - can enhance with CrewAI",
+    "upgrade_strategy": "Add CrewAI research crew on top of LlamaIndex RAG"
+  },
+  {
+    "id": 92,
+    "title": "KnowledgeGPT",
+    "github_url": "https://github.com/mmz-001/knowledge_gpt",
+    "priority": "high",
+    "reason": "Knowledge extraction app - perfect for CrewAI crew",
+    "upgrade_strategy": "Add multi-agent crew for document processing and Q&A"
+  },
+  {
+    "id": 101,
+    "title": "GPT Lab",
+    "github_url": "https://github.com/dclin/gptlab-streamlit",
+    "priority": "medium",
+    "reason": "GPT experimentation - can add agent workflows",
+    "upgrade_strategy": "Add CrewAI workflow examples"
+  },
+  {
+    "id": 114,
+    "title": "GPT Email Generator",
+    "github_url": "https://github.com/stefanrmmr/gpt3_email_generator",
+    "priority": "medium",
+    "reason": "Email generation - perfect for CrewAI writing crew",
+    "upgrade_strategy": "Add research, writing, and editing agents"
+  },
+  {
+    "id": 77,
+    "title": "MathGPT",
+    "github_url": "https://github.com/napoles-uach/numpgpt",
+    "priority": "medium",
+    "reason": "Math problem solver - can use specialized agents",
+    "upgrade_strategy": "Add math solver, explainer, and validator agents"
+  },
+  {
+    "id": 237,
+    "title": "Talk with PDF",
+    "github_url": "https://github.com/yesbhautik/talk-with-pdf",
+    "priority": "high",
+    "reason": "PDF chat - perfect for document analysis crew",
+    "upgrade_strategy": "Add PDF analyzer, summarizer, and Q&A agents"
+  },
+  {
+    "id": 100,
+    "title": "LLM Leaderboard",
+    "github_url": "https://github.com/ludwigstumpp/llm-leaderboard",
+    "priority": "low",
+    "reason": "Leaderboard display - less need for agents but can add insights",
+    "upgrade_strategy": "Add analysis crew for LLM comparison insights"
+  }
+]

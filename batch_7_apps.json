@@ -1,0 +1,145 @@
+{
+  "batch_number": 7,
+  "apps": [
+    {
+      "id": 224,
+      "title": "Streamlit Token Craft example",
+      "github_url": "https://github.com/stavrostheocharis/streamlit-apps-showcase",
+      "folder_name": "tokencraft-agent224",
+      "pattern": "simple_enhancement"
+    },
+    {
+      "id": 195,
+      "title": "Assistant, Quest2Query",
+      "github_url": "https://github.com/martin1998215/locasx",
+      "folder_name": "quest2query-agent195",
+      "pattern": "simple_enhancement"
+    },
+    {
+      "id": 171,
+      "title": "SumGPT",
+      "github_url": "https://github.com/sean1832/sumgpt",
+      "folder_name": "sumgpt-agent171",
+      "pattern": "simple_enhancement"
+    },
+    {
+      "id": 145,
+      "title": "SERSitiVIS",
+      "github_url": "https://github.com/czubert/sersitivis",
+      "folder_name": "sersitivis-agent145",
+      "pattern": "simple_enhancement"
+    },
+    {
+      "id": 93,
+      "title": "MRKL",
+      "github_url": "https://github.com/langchain-ai/streamlit-agent",
+      "folder_name": "mrkl-agent93",
+      "pattern": "simple_enhancement"
+    },
+    {
+      "id": 83,
+      "title": "prettymapp",
+      "github_url": "https://github.com/chrieke/prettymapp",
+      "folder_name": "prettymapp-agent83",
+      "pattern": "simple_enhancement"
+    },
+    {
+      "id": 223,
+      "title": "SnowDQ",
+      "github_url": "https://github.com/laxman001/snowdq",
+      "folder_name": "snowdq-agent223",
+      "pattern": "simple_enhancement"
+    },
+    {
+      "id": 194,
+      "title": "TaxGPT",
+      "github_url": "https://github.com/basil-chatha/taxgpt",
+      "folder_name": "taxgpt-agent194",
+      "pattern": "simple_enhancement"
+    },
+    {
+      "id": 84,
+      "title": "GW Quickview",
+      "github_url": "https://github.com/jkanner/streamlit-dataview",
+      "folder_name": "gwquickview-agent84",
+      "pattern": "simple_enhancement"
+    },
+    {
+      "id": 253,
+      "title": "PMP Jatim Notaris",
+      "github_url": "https://github.com/nurinsalsabl/pmpjnotarisjatim",
+      "folder_name": "pmpjatim-agent253",
+      "pattern": "simple_enhancement"
+    },
+    {
+      "id": 144,
+      "title": "Snowflake table catalog",
+      "github_url": "https://github.com/mydgd/snowflake-table-catalog",
+      "folder_name": "snowflake-catalog-agent144",
+      "pattern": "simple_enhancement"
+    },
+    {
+      "id": 222,
+      "title": "TFinder",
+      "github_url": "https://github.com/jumitti/tfinder",
+      "folder_name": "tfinder-agent222",
+      "pattern": "simple_enhancement"
+    },
+    {
+      "id": 228,
+      "title": "K A T E One",
+      "github_url": "https://github.com/semantha/kate1",
+      "folder_name": "kate-agent228",
+      "pattern": "simple_enhancement"
+    },
+    {
+      "id": 170,
+      "title": "Snowpark Python Packages in Snowflake Conda Channel",
+      "github_url": "https://github.com/iamontheinet/snowpark-python-anaconda",
+      "folder_name": "snowpark-agent170",
+      "pattern": "simple_enhancement"
+    },
+    {
+      "id": 143,
+      "title": "SmartPrep",
+      "github_url": "https://github.com/voltackle67/smartprep-q1",
+      "folder_name": "smartprep-agent143",
+      "pattern": "simple_enhancement"
+    },
+    {
+      "id": 117,
+      "title": "COVID19: EpiCenter for Disease Dynamics",
+      "github_url": "https://github.com/panditpranav/svm_covid_tracking",
+      "folder_name": "covid19-agent117",
+      "pattern": "simple_enhancement"
+    },
+    {
+      "id": 193,
+      "title": "Aspasia [Alpha]",
+      "github_url": "https://github.com/maxwellknowles/catalyst",
+      "folder_name": "aspasia-agent193",
+      "pattern": "simple_enhancement"
+    },
+    {
+      "id": 86,
+      "title": "Gita GPT",
+      "github_url": "https://github.com/kinshukk/gitagpt",
+      "folder_name": "gitagpt-agent86",
+      "pattern": "simple_enhancement"
+    },
+    {
+      "id": 169,
+      "title": "New features in Streamlit 1.28",
+      "github_url": "https://github.com/streamlit/release-demos",
+      "folder_name": "streamlit128-agent169",
+      "pattern": "simple_enhancement"
+    },
+    {
+      "id": 142,
+      "title": "DCR Setup Assistant",
+      "github_url": "https://github.com/snowflake-labs/sfquickstart-data-clean-room",
+      "folder_name": "dcr-agent142",
+      "pattern": "simple_enhancement"
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "batch_number": 8,
+  "total_apps": 20,
+  "processed": 2,
+  "successful": 2,
+  "failed": 0,
+  "skipped": 2,
+  "results": [
+    {
+      "id": 116,
+      "title": "GZ DECaLS",
+      "repo": "galaxy-poster",
+      "status": "completed",
+      "fork_url": "https://github.com/colygon/galaxy-poster",
+      "local_path": "/Users/colinlowenberg/crew/galaxy-poster-agent116",
+      "agents_created": 2,
+      "files_added": [
+        "agents.py",
+        "tasks.py",
+        "main.py",
+        "gz_decals_crewai.py",
+        "COMPLETION_REPORT.md",
+        "CREWAI_UPGRADE.md"
+      ],
+      "files_modified": ["requirements.txt"],
+      "commit_hash": "a02b82c",
+      "timestamp": "2025-12-21T19:55:00Z",
+      "notes": "Successfully added Galaxy Morphology Analyst and Recommendation Specialist agents. Full backward compatibility maintained."
+    },
+    {
+      "id": 220,
+      "title": "Dunning and Kruger experiments",
+      "repo": "dunning-kruger",
+      "status": "completed",
+      "fork_url": "https://github.com/colygon/dunning-kruger",
+      "local_path": "/Users/colinlowenberg/crew/dunning-kruger-agent220",
+      "agents_created": 2,
+      "files_added": [
+        "agents.py",
+        "tasks.py",
+        "main.py",
+        "COMPLETION_REPORT.md",
+        "CREWAI_UPGRADE.md"
+      ],
+      "files_modified": ["requirements.txt"],
+      "commit_hash": "5f22a65",
+      "timestamp": "2025-12-21T20:05:00Z",
+      "notes": "Successfully added Statistical Research Analyst and Research Methodology Advisor agents."
+    },
+    {
+      "id": 192,
+      "title": "CodeLlama Playground via DeepInfra",
+      "repo": "codellama-via-deepinfra",
+      "status": "pending"
+    },
+    {
+      "id": 284,
+      "title": "CrewAI Jupyter Notebooks",
+      "repo": "crewAI-examples",
+      "status": "skipped",
+      "reason": "Already a CrewAI project"
+    },
+    {
+      "id": 252,
+      "title": "ABI Break Even Loadout Calculator",
+      "repo": "abiloadoutcalculator",
+      "status": "pending"
+    },
+    {
+      "id": 219,
+      "title": "UNIFI Autism Care",
+      "repo": "unifi",
+      "status": "pending"
+    },
+    {
+      "id": 191,
+      "title": "Financial & Economic Essentials",
+      "repo": "fyi-budget-tracker",
+      "status": "pending"
+    },
+    {
+      "id": 168,
+      "title": "Semantha",
+      "repo": "semantha-streamlit",
+      "status": "pending"
+    },
+    {
+      "id": 115,
+      "title": "Rascore",
+      "repo": "rascore",
+      "status": "pending"
+    },
+    {
+      "id": 190,
+      "title": "Wordler",
+      "repo": "wordler",
+      "status": "pending"
+    },
+    {
+      "id": 139,
+      "title": "Monte Carlo Pi",
+      "repo": "streamlit_webapps",
+      "status": "pending"
+    },
+    {
+      "id": 85,
+      "title": "30Days of Streamlit",
+      "repo": "30days-i18n",
+      "status": "pending"
+    },
+    {
+      "id": 189,
+      "title": "GPT compare",
+      "repo": "openai-model-compare",
+      "status": "pending"
+    },
+    {
+      "id": 166,
+      "title": "Synthia",
+      "repo": "synthia",
+      "status": "pending"
+    },
+    {
+      "id": 248,
+      "title": "PNG Generator (Japanese app)",
+      "repo": "png-gen",
+      "status": "pending"
+    },
+    {
+      "id": 188,
+      "title": "SurViZ",
+      "repo": "surviz",
+      "status": "pending"
+    },
+    {
+      "id": 280,
+      "title": "Starter Template",
+      "repo": "crewAI-examples",
+      "status": "skipped",
+      "reason": "Already a CrewAI project"
+    },
+    {
+      "id": 216,
+      "title": "YouKnowSnow",
+      "repo": "youknow_snowflake",
+      "status": "pending"
+    },
+    {
+      "id": 165,
+      "title": "SimiLo",
+      "repo": "similo_beta2",
+      "status": "pending"
+    },
+    {
+      "id": 111,
+      "title": "BERT Semantic Interlinking App",
+      "repo": "seo",
+      "status": "pending"
+    }
+  ],
+  "notes": "Batch 8 processing started. Completed 2 apps successfully. Apps 284 and 280 are CrewAI projects and were skipped. Remaining 16 apps require similar upgrades. A batch processing script (batch_8_upgrade_script.py) has been created to streamline future upgrades.",
+  "summary": {
+    "completed_apps": ["galaxy-poster (116)", "dunning-kruger (220)"],
+    "completion_rate": "10%",
+    "estimated_time_per_app": "15-20 minutes",
+    "total_estimated_time_remaining": "4-5 hours",
+    "tools_created": ["batch_8_upgrade_script.py - Template-based upgrade automation"],
+    "approach": "Deep dive on first app, streamlined template approach for remaining apps"
+  }
+}

@@ -1,0 +1,38 @@
+# CrewAI Tools List
+
+Based on the HTML provided, here are the CrewAI tools:
+
+1. AIMindTool - AI-Minds wrapper for querying data from databases
+2. ArxivPaperTool - Fetches metadata from Arxiv and downloads PDFs
+3. BraveSearchTool - Internet search using Brave Search API
+4. BrightDataDatasetTool - Scrapes structured data using Bright Data
+5. BrightDataSearchTool - Web search using Bright Data SERP API
+6. BrightDataWebUnlockerTool - Web scraping using Bright Data
+7. BrowserbaseLoadTool - Load webpages in headless browser
+8. CSVSearchTool - Semantic search from CSV content
+9. CodeDocsSearchTool - Semantic search from code documentation
+10. CodeInterpreterTool - Interprets Python3 code strings
+11. ComposioTool - Wrapper for composio tools
+
+## Tool Mapping to Upgraded Apps
+
+### Research/Academic Apps
+- **ArxivPaperTool**: askmypdf-agent58, talk-with-pdf-agent9
+- **BraveSearchTool**: All apps could benefit
+- **CodeDocsSearchTool**: streamlit docs apps, code-related apps
+
+### Data Analysis Apps
+- **AIMindTool**: dezoomcamp-agent54, mito-agent56, stockpeers-agent12
+- **CSVSearchTool**: stockpeers-agent12, goodreads-agent31, seattle-weather-agent11
+
+### Code/Developer Apps
+- **CodeInterpreterTool**: streamlit-agent-crewai, gptlab-agent6
+- **CodeDocsSearchTool**: cheatsheet-agent19, llamaindex-streamlit-docs
+
+### Web Scraping Apps
+- **BrowserbaseLoadTool**: gallery-okld-agent22, components-hub-agent45
+- **BrightDataSearchTool**: seo-agent44, fmhy-agent23
+- **BrightDataWebUnlockerTool**: bgremoval-agent49, prettymapp-agent33
+
+### General Purpose
+- **ComposioTool**: Can be added to apps needing automation

@@ -1,0 +1,6 @@
+crewai>=0.86.0
+langchain-openai>=0.3.0
+python-dotenv>=1.0.0
+# Note: claude-agent-sdk not included - shows CrewAI-only approach
+# For true hybrid with SDK, uncomment below:
+# claude-agent-sdk>=1.0.0

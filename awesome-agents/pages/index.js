@@ -7,6 +7,7 @@ export default function Home() {
   const [selectedCategory, setSelectedCategory] = useState('');
   const [categories, setCategories] = useState([]);
   const [showCrewAIOnly, setShowCrewAIOnly] = useState(false);
+  const [upgradingApps, setUpgradingApps] = useState(new Set());
 
   useEffect(() => {
     // Build query parameters
@@ -38,6 +39,38 @@ export default function Home() {
     }
     return 0;
   });
+
+  const handleUpgrade = async (app) => {
+    setUpgradingApps(prev => new Set(prev).add(app.id));
+
+    try {
+      const response = await fetch('/api/upgrade', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          appId: app.id,
+          title: app.title,
+          github_url: app.github_url,
+          category: app.category
+        })
+      });
+
+      if (!response.ok) {
+        throw new Error('Upgrade request failed');
+      }
+
+      const data = await response.json();
+      alert(`Upgrade agent launched for "${app.title}"! The upgrade will happen in the background.`);
+    } catch (error) {
+      console.error('Upgrade error:', error);
+      alert(`Failed to launch upgrade agent: ${error.message}`);
+      setUpgradingApps(prev => {
+        const next = new Set(prev);
+        next.delete(app.id);
+        return next;
+      });
+    }
+  };
 
   return (
     <div>
@@ -171,6 +204,26 @@ export default function Home() {
             <p>{app.description}</p>
             <p>Watchers: {app.watchers} | Views: {app.views}</p>
             <a href={app.github_url} target="_blank" rel="noopener noreferrer">GitHub</a>
+            {app.has_crewai !== 1 && (
+              <button
+                onClick={() => handleUpgrade(app)}
+                disabled={upgradingApps.has(app.id)}
+                style={{
+                  marginTop: '10px',
+                  padding: '8px 16px',
+                  backgroundColor: upgradingApps.has(app.id) ? '#6c757d' : '#ff6b6b',
+                  color: 'white',
+                  border: 'none',
+                  borderRadius: '5px',
+                  cursor: upgradingApps.has(app.id) ? 'not-allowed' : 'pointer',
+                  fontWeight: 'bold',
+                  width: '100%',
+                  fontSize: '14px'
+                }}
+              >
+                {upgradingApps.has(app.id) ? '⏳ Upgrading...' : '⚡ Upgrade to CrewAI'}
+              </button>
+            )}
             {app.tags && <p className="tags">Tags: {app.tags.split(',').map(tag => <span key={tag.trim()} className="tag">{tag.trim()}</span>)}</p>}
           </div>
         ))}

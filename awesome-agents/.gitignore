@@ -36,3 +36,7 @@ apps.db-journal
 # Logs
 *.log
 /tmp/
+.env.local
+apps-export.json
+apps-export.sql
+pages/api/apps-sqlite.js.backup

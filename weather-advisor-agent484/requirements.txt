@@ -1,0 +1,7 @@
+crewai>=0.86.0
+langchain-openai>=0.2.0
+python-dotenv>=1.0.0
+crewai-tools>=0.17.0
+# Optional: Uncomment to add real weather data integration
+# requests>=2.31.0
+# pyowm>=3.3.0  # OpenWeather API wrapper

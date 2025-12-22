@@ -1,0 +1,10 @@
+crewai==0.80.0
+crewai-tools==0.17.0
+python-dotenv==1.0.0
+langchain==0.3.13
+langchain-openai==0.2.14
+langchain-community==0.3.13
+pandas==2.1.4
+matplotlib==3.8.2
+plotly==5.18.0
+seaborn==0.13.0

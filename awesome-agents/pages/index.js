@@ -55,15 +55,21 @@ export default function Home() {
         })
       });
 
-      if (!response.ok) {
-        throw new Error('Upgrade request failed');
-      }
-
       const data = await response.json();
-      alert(`Upgrade agent launched for "${app.title}"! The upgrade will happen in the background.`);
+
+      if (!response.ok) {
+        if (response.status === 501) {
+          alert(`Upgrade feature is not available on this deployment.\n\nTo upgrade "${app.title}":\n1. Clone the repository: ${app.github_url}\n2. Run the upgrade locally\n3. Submit a PR to the gallery`);
+        } else {
+          throw new Error(data.error || 'Upgrade request failed');
+        }
+      } else {
+        alert(`Upgrade agent launched for "${app.title}"! The upgrade will happen in the background.`);
+      }
     } catch (error) {
       console.error('Upgrade error:', error);
       alert(`Failed to launch upgrade agent: ${error.message}`);
+    } finally {
       setUpgradingApps(prev => {
         const next = new Set(prev);
         next.delete(app.id);

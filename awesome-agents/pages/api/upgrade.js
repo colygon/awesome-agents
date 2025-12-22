@@ -1,5 +1,3 @@
-import { spawn } from 'child_process';
-import path from 'path';
 import db from '../../db.js';
 
 export default function handler(req, res) {
@@ -16,34 +14,53 @@ export default function handler(req, res) {
     return;
   }
 
-  // Launch an upgrade agent in the background
-  const agentProcess = spawn('node', [
-    path.join(process.cwd(), 'upgrade-agent.js'),
-    '--appId', String(appId),
-    '--githubUrl', github_url,
-    '--title', title || 'Untitled',
-    '--category', category || 'unknown'
-  ], {
-    detached: true,
-    stdio: 'ignore'
-  });
+  // Note: Background agent spawning is disabled on serverless environments
+  // This feature works only in local development
+  if (process.env.VERCEL) {
+    res.status(501).json({
+      error: 'Upgrade feature is not available on serverless deployments',
+      message: 'Please run the upgrade locally using the CLI or contact the maintainer',
+      github_url,
+      appId
+    });
+    return;
+  }
 
-  agentProcess.unref();
+  // For local development only
+  try {
+    const { spawn } = await import('child_process');
+    const path = await import('path');
 
-  // Mark the app as "upgrading" in the database
-  db.run(
-    'UPDATE apps SET tags = CASE WHEN tags IS NULL OR tags = "" THEN "upgrading" ELSE tags || ", upgrading" END WHERE id = ?',
-    [appId],
-    function(err) {
-      if (err) {
-        res.status(500).json({ error: err.message });
-        return;
+    const agentProcess = spawn('node', [
+      path.join(process.cwd(), 'upgrade-agent.js'),
+      '--appId', String(appId),
+      '--githubUrl', github_url,
+      '--title', title || 'Untitled',
+      '--category', category || 'unknown'
+    ], {
+      detached: true,
+      stdio: 'ignore'
+    });
+
+    agentProcess.unref();
+
+    // Mark the app as "upgrading" in the database
+    db.run(
+      'UPDATE apps SET tags = CASE WHEN tags IS NULL OR tags = "" THEN "upgrading" ELSE tags || ", upgrading" END WHERE id = ?',
+      [appId],
+      function(err) {
+        if (err) {
+          res.status(500).json({ error: err.message });
+          return;
+        }
+        res.status(200).json({
+          message: 'Upgrade agent launched successfully',
+          appId,
+          status: 'upgrading'
+        });
       }
-      res.status(200).json({
-        message: 'Upgrade agent launched successfully',
-        appId,
-        status: 'upgrading'
-      });
-    }
-  );
+    );
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
 }
